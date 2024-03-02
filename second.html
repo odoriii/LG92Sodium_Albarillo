@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Page</title>
+  </head>
+  <body>
+    <img id="myImg" src="zappuppu1.jpg" alt="Image 1" width="230px" height="400px">
+    <br><br>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="revertImage()">Revert Image</button>
+    <script>
+      var img = document.getElementById("myImg");
+      var originalPic = img.src;
+      var newPic = "zappuppu2.jpg";
+      
+      function changeImage() {
+        img.src = newPic;
+      }
+      function revertImage() {
+        img.src = originalPic;
+      }
+    </script>
+  </body>
+</html>
